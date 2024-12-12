@@ -37,6 +37,7 @@ function DisplayProduct(){
         <div className="flex flex-wrap justify-center gap-y-10 gap-x-2 absolute top-10 mt-10">
             {list.length > 0 && (isLoading) ? "Loading....." : list.map((p)=><ProductCard
                                                 key={p.id}
+                                                ID = {p.id}
                                                 imgLink={p.image}
                                                 name={p.name}
                                                 price={p.price}
